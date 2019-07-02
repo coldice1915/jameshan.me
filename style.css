@@ -1,0 +1,36 @@
+header {
+    text-align: center;
+}
+body {
+    background-color: #FFF;
+    margin: 0 auto;
+}
+  
+.menu {
+    width: 100%;
+    position: relative;
+
+}
+
+ul {
+    margin: 30px auto;
+    padding: 0 100px;
+    text-align: center;
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100px;
+}
+
+li:hover {
+    color: #DBE9EE;
+}
+
+footer {
+    text-align: center;
+}
