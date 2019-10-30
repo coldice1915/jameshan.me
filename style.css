@@ -84,3 +84,8 @@ footer {
     display: block;
     margin: auto;
 }
+#homepage-greeting p {
+    text-align: right;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
