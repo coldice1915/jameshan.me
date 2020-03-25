@@ -9,6 +9,22 @@
     <title>Who's James Han?</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .image-list {
+            list-style: none;
+            display: flex;
+            align: center;
+        }
+            a.image-preview img {
+                height: 150px;
+                margin: 0px 50px 0px 0px;
+                box-shadow: 0px 0px 5px rgba(0,0,0,.5);
+            }
+                .image-preview:hover {
+                    opacity: .5;
+                }
+
+    </style>
 </head>
 
 <body>
@@ -41,47 +57,115 @@
     </header>
 
     <main>
-        <div>
+        <div class="projects">
             <div>
-                <p><strong>jameshan.me</strong></p>
-                2019-
-                <p>Personal website</p>
+                <div align=center><font size=+1>–– Programming ––</font></div>
+                <div>
+                    <p><strong><i>jameshan.me</i></strong></p>
+                    2019-
+                    <p>Personal website</p>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <p><strong><i>MADb</i></strong></p>
+                    2020
+                    <p>Movies and Actors Database where authorized users can catalog actors and movies from the entertainment industry.<br><a href="https://madb-app.herokuapp.com">Link to MADb</a></p>
+                    <br>
+                    <ul class="image-list">
+                        <li>
+                            <a class='image-preview' href="./images/project-images/madb-home.png" target="_blank">
+                                <img src="./images/project-images/madb-home.png" alt="madb homepage"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class='image-preview' href="./images/project-images/madb-login.png" target="_blank">
+                                <img src="./images/project-images/madb-login.png" alt="madb login"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <p><strong><i>Coffi</i></strong></p>
+                    2020
+                    <p>A simple coffee menu that showcases graphical representation of ingredients in user-created coffee drinks.<br><a href="https://github.com/coldice1915/coffi">Link to Coffi</a></p>
+                    <br>
+                    <ul class="image-list">
+                        <li>
+                            <a class='image-preview' href="./images/project-images/coffi-menu.png" target="_blank">
+                                <img src="./images/project-images/coffi-menu.png" alt="Coffi Menu"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="image-preview" href="./images/project-images/coffi-user.png" target="_blank">
+                                <img src="./images/project-images/coffi-user.png" alt="Coffi User"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <p><strong><i>Trivia</i></strong></p>
+                    2020
+                    <p>Play some trivia! Create your own questions and categories and test your knowledge with a quiz.</p>
+                    <br>
+                    <ul class="image-list">
+                        <li>
+                            <a class='image-preview' href="./images/project-images/trivia-home.png" target="_blank">
+                                <img src="./images/project-images/trivia-home.png" alt="trivia homepage"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a class='image-preview' href="./images/project-images/trivia-add.png" target="_blank">
+                                <img src="./images/project-images/trivia-add.png" alt="trivia add a question"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <p><strong><i>Fyyur</i></strong></p>
+                    2019
+                    <p>Venue and artist booking site that lets you list and discover artists, venues, and upcoming shows.</p>
+                    <br>
+                    <ul class="image-list">
+                        <li>
+                            <a class='image-preview' href="./images/project-images/fyyur.png" target="_blank">
+                                <img src="./images/project-images/fyyur.png" alt="fyyur homepage"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <p><strong><i>Logs Analysis</i></strong></p>
+                    2019
+                    <p>Reporting tool using data from web server logs of article readers</p>
+                    <br>
+                    <ul class="image-list">
+                        <li>
+                            <a class='image-preview' href="./images/project-images/logs-analysis.png" target="_blank">
+                                <img src="./images/project-images/logs-analysis.png" alt="reporting tool"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
             </div>
-            <br>
-            <br>
             <div>
-                <p><strong>MADb</strong></p>
-                2020
-                <p>Movies and Actors Database where authorized users can catalog actors and movies from the entertainment industry. <a href="https://madb-app.herokuapp.com">Link to MADb</a></p>
-            </div>
-            <br>
-            <br>
-            <div>
-                <p><strong>Coffi</strong></p>
-                2020
-                <p>A simple coffee menu that showcases graphical representation of ingredients in user-created coffee drinks.</p>
-            </div>
-            <br>
-            <br>
-            <div>
-                <p><strong>Fyyur</strong></p>
-                2019
-                <p>Venue and artist booking site that lets you list and discover artists, venues, and upcoming shows.</p>
-            </div>
-            <br>
-            <br>
-            <div>
-                <p><strong>Logs Analysis</strong></p>
-                2019
-                <p>Reporting tool using data from web server logs of article readers</p>
-            </div>
-            <br>
-            <br>
-            <div>
-                <p><strong>Home Renovation</strong></p>
-                2018-2019
-                <p>Planned, scheduled, and budgeted renovation project with home owner. Ordered appliances, supplies and tools within budget, painted interior of house, and replaced carpet flooring with laminate.
-                    <a href="https://www.redfin.com/VA/Centreville/14001A-Walter-Bowie-Ln-20121/home/145750555">14001A Walter Bowie Ln, Centreville, VA 20121</a></p>
+                <div align=center><font size=+1>–– Other ––</font></div>
+                <div>
+                    <p><strong><i>Home Renovation</i></strong></p>
+                    2018-2019
+                    <p>Planned, scheduled, and budgeted renovation project with home owner. Ordered appliances, supplies and tools within budget, painted interior of house, and replaced carpet flooring with laminate.<br>
+                        <a href="https://www.redfin.com/VA/Centreville/14001A-Walter-Bowie-Ln-20121/home/145750555">14001A Walter Bowie Ln, Centreville, VA 20121</a></p>
+                </div>
             </div>
         </div>
     </main>
@@ -91,7 +175,7 @@
             <li class= "">
                 <a href="https://github.com/coldice1915" target="_blank">
                     <img id="social-link-github" title="GitHub" src="./images/GitHub-Mark/PNG/GitHub-Mark-64px.png">
-                </a> 
+                </a>
             </li>
             <li class= "">
                 <a href="https://www.linkedin.com/in/question-no-doubt/" target="_blank">
