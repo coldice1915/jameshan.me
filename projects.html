@@ -13,7 +13,6 @@
         .image-list {
             list-style: none;
             display: flex;
-            align: center;
         }
             a.image-preview img {
                 height: 150px;
@@ -21,9 +20,31 @@
                 box-shadow: 0px 0px 5px rgba(0,0,0,.5);
             }
                 .image-preview:hover {
-                    opacity: .5;
+                    opacity: .7;
                 }
+            a.image-preview-lots img {
+                height: 150px;
+                margin: 0px 10px 0px 0px;
 
+            }
+        #before {
+            position: relative;
+            width: 100%;
+        }
+        #after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .3s ease;
+        }
+        #before:hover #after {
+            opacity: 1;
+        }
     </style>
 </head>
 
@@ -63,7 +84,7 @@
                 <div>
                     <p><strong><i>jameshan.me</i></strong></p>
                     2019-
-                    <p>Personal website</p>
+                    <p>This website!</p>
                 </div>
                 <br>
                 <br>
@@ -71,7 +92,6 @@
                     <p><strong><i>MADb</i></strong></p>
                     2020
                     <p>Movies and Actors Database where authorized users can catalog actors and movies from the entertainment industry.<br><a href="https://madb-app.herokuapp.com">Link to MADb</a></p>
-                    <br>
                     <ul class="image-list">
                         <li>
                             <a class='image-preview' href="./images/project-images/madb-home.png" target="_blank">
@@ -91,7 +111,6 @@
                     <p><strong><i>Coffi</i></strong></p>
                     2020
                     <p>A simple coffee menu that showcases graphical representation of ingredients in user-created coffee drinks.<br><a href="https://github.com/coldice1915/coffi">Link to Coffi</a></p>
-                    <br>
                     <ul class="image-list">
                         <li>
                             <a class='image-preview' href="./images/project-images/coffi-menu.png" target="_blank">
@@ -111,7 +130,6 @@
                     <p><strong><i>Trivia</i></strong></p>
                     2020
                     <p>Play some trivia! Create your own questions and categories and test your knowledge with a quiz.</p>
-                    <br>
                     <ul class="image-list">
                         <li>
                             <a class='image-preview' href="./images/project-images/trivia-home.png" target="_blank">
@@ -131,7 +149,6 @@
                     <p><strong><i>Fyyur</i></strong></p>
                     2019
                     <p>Venue and artist booking site that lets you list and discover artists, venues, and upcoming shows.</p>
-                    <br>
                     <ul class="image-list">
                         <li>
                             <a class='image-preview' href="./images/project-images/fyyur.png" target="_blank">
@@ -145,8 +162,7 @@
                 <div>
                     <p><strong><i>Logs Analysis</i></strong></p>
                     2019
-                    <p>Reporting tool using data from web server logs of article readers</p>
-                    <br>
+                    <p>Built a reporting tool that outputs meaningful data by querying web server logs of article readers.</p>
                     <ul class="image-list">
                         <li>
                             <a class='image-preview' href="./images/project-images/logs-analysis.png" target="_blank">
@@ -160,11 +176,63 @@
             </div>
             <div>
                 <div align=center><font size=+1>–– Other ––</font></div>
-                <div>
+                <div class="project-width">
                     <p><strong><i>Home Renovation</i></strong></p>
                     2018-2019
-                    <p>Planned, scheduled, and budgeted renovation project with home owner. Ordered appliances, supplies and tools within budget, painted interior of house, and replaced carpet flooring with laminate.<br>
-                        <a href="https://www.redfin.com/VA/Centreville/14001A-Walter-Bowie-Ln-20121/home/145750555">14001A Walter Bowie Ln, Centreville, VA 20121</a></p>
+                    <p>Planned, budgeted, and executed renovation project with home owner. Ordered supplies and tools, painted interior of house, replaced carpet flooring with laminate, etc.<br>
+                        <a href="https://www.redfin.com/VA/Centreville/14001A-Walter-Bowie-Ln-20121/home/145750555">14001A Walter Bowie Ln, Centreville, VA 20121</a>
+                    </p>
+                    <ul class="image-list">
+                        <li>
+                            <div id="before">
+                                <a class='image-preview-lots'>
+                                    <img class="image-hover" src="./images/project-images/home-renovation/supplies.jpg" alt="laminate boxes"/>
+                                    <div id="after">
+                                        <a class="image-preview-lots" href="/images/project-images/home-renovation/tools.jpg" target="_blank">
+                                            <img src="./images/project-images/home-renovation/tools.jpg" alt="laminate tools"/></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="before">
+                                <a class='image-preview-lots'>
+                                    <img class="image-hover" src="./images/project-images/home-renovation/carpet-rip.jpg" alt="ripping carpet"/>
+                                    <div id="after">
+                                        <a class="image-preview-lots" href="/images/project-images/home-renovation/carpet-roll.jpg" target="_blank">
+                                            <img src="./images/project-images/home-renovation/carpet-roll.jpg" alt="rolling carpet"/></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="before">
+                                <a class='image-preview-lots'>
+                                    <img class="image-hover" src="./images/project-images/home-renovation/laminate-start.jpg" alt="laminate flooring"/>
+                                    <div id="after">
+                                        <a class="image-preview-lots" href="/images/project-images/home-renovation/laminate-finish.jpg" target="_blank">
+                                            <img src="./images/project-images/home-renovation/laminate-finish.jpg" alt="laminate flooring finish"/></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="image-list">
+                        <li>
+                            <div id="before">
+                                <a class='image-preview-lots' href="./images/project-images/home-renovation/stair-before.jpg" target="_blank">
+                                    <img class="image-hover" src="./images/project-images/home-renovation/stair-before.jpg" alt="before stairs"/>
+                                    <div id="after">
+                                        <a class="image-preview-lots" href="./images/project-images/home-renovation/stair-after.jpg" target="_blank">
+                                            <img src="./images/project-images/home-renovation/stair-after.jpg" alt="after stairs"/></a>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
