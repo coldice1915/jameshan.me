@@ -1,7 +1,7 @@
 RewriteEngine on
 
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} [A-Z]
 
-RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteCond %{REQUEST_URI}\.html
 
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteRule ^.*$ $1.html [NC,L]
