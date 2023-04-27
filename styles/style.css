@@ -13,10 +13,10 @@ header {
     margin: auto;
 }
     header h1 {
-        letter-spacing: 18px;
+        letter-spacing: 16px;
         line-height: 100%;
         font-weight: 600;
-        font-size: 72px;
+        font-size: 68px;
         margin: 10% 0% 5% 0%;
     }
         header h1 a {
@@ -101,10 +101,32 @@ footer {
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
 }
+
+/* project year */
+.project-year {
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 12px;
+    /* text-align: right; */
+    /* margin: 0px 0px 0px 0px; */
+}
+
 /* project names*/
 .project-name {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* project description */
+.project-description {
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 14px;
+    /* font-style: italic; */
+}
+
+/* project link */
+.project-link {
+    font-size: 12px;
 }
 /* project page */
 .image-list {
