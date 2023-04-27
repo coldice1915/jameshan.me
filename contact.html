@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="James Han's profile">
+    <meta name="author" content="James Han">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's James Han?</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+        margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a title="" href="/" style="text-decoration: none">James Han</a>
+        </h1>
+        <nav class="main-nav">
+            <ul>
+                <li class= "">
+                    <a title="" href="about-me" style="text-decoration: none">About Me</a>
+                </li>
+                <li>•</li>
+                <li class= "">
+                    <a title="" href="projects" style="text-decoration: none">Projects</a>
+                </li>
+                <li>•</li>
+                <!-- <li class= "">
+                    <a title="" href="blog" style="text-decoration: none">Blog</a>
+                </li>
+                <li>•</li> -->
+                <li class= "">
+                    <a title="" href="likes" style="text-decoration: none">Likes</a>
+                </li>
+                <li>•</li>
+                <li class="">
+                    <a title="" href="contact" style="text-decoration: none;color: rgba(0, 0, 0, 0.171);">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="form">
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" class="form-control" id="name" placeholder="name" required="">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" class="form-control" id="email" placeholder="email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea class="form-control" id="message" placeholder="message" rows="5" required></textarea>
+              </div>
+              <div id="alert" class="alert d-none">
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send
+              </button>
+            </form>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+          <script>
+            function showMessage(msg, type) {
+              $('#alert').attr('class', `alert alert-${type}`).text(msg)
+            }
+
+            function hideMessage(msg) {
+              $('#alert').attr('class', 'd-none')
+            }
+
+            $('#form').submit(event => {
+              event.preventDefault()
+              hideMessage()
+
+              let name = $('#name').val().trim()
+              let email = $('#email').val().trim()
+              let message = $('#message').val().trim()
+
+              if (!(name && email && message)) {
+                showMessage('You must fill in all the fields before submitting the form', 'danger')
+                return
+              }
+
+              $.post('https://kpqx4t72ee.execute-api.us-west-2.amazonaws.com/default/contactFormFunction', {name, email, message}).done(_ => {
+                showMessage("I'll be in touch!", 'success')
+              }).fail(_ => {
+                showMessage('Something went wrong when submiting the message', 'danger')
+              })
+            })
+          </script>
+    </main>
+
+    <footer>
+        <ul>
+            <li class="">
+                <a href="https://github.com/coldice1915" target="_blank">
+                    <img id="social-link-github" title="GitHub" src="./images/GitHub-Mark/PNG/GitHub-Mark-64px.png">
+                </a>
+            </li>
+            <li>•</li>
+            <li class="">
+                <a href="https://www.linkedin.com/in/jameshan-dot-me/" target="_blank">
+                    <img id="social-link-linkedin" title="Linkedin" src="./images/LinkedIn-Logos/LI-In-Bug.png">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
