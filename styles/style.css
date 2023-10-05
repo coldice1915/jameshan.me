@@ -124,6 +124,10 @@ footer {
     /* font-style: italic; */
 }
 
+.technologies-used {
+    opacity: 0.5;
+}
+
 /* project link */
 .project-link {
     font-size: 12px;
